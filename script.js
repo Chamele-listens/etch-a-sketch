@@ -1,11 +1,13 @@
-const body = document.querySelector("body")
-const containerY = document.createElement("div")
+const body = document.querySelector("body");
+const boxGenerate = document.querySelector("button");
+const containerY = document.createElement("div");
+let boxNum = 0;
 
 containerY.style.display = "flex"
 containerY.style.flexWrap = "wrap"
 containerY.style.flexDirection = "column"
 
-let boxNum = prompt("what grid would you like?");
+boxNum = prompt("what grid would you like?");
 
 for (let i = 1; i <= boxNum; i++){
     const containerX = document.createElement("div")
