@@ -10,8 +10,11 @@ containerY.style.flexDirection = "column"
 boxGenerate.addEventListener("click",()=>{  
     boxNum = prompt("what grid would you like?");
     if (containerY != null){
-        containerY.remove();
-    }
+            let clearBox = document.querySelectorAll("div");
+            clearBox.forEach((box) => {
+                box.parentNode.removeChild(box)
+            });
+        }
     for (let i = 1; i <= boxNum; i++){
         const containerX = document.createElement("div")
         containerX.style.display = "flex"
