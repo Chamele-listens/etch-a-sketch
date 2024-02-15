@@ -7,6 +7,13 @@ containerY.style.display = "flex"
 containerY.style.flexWrap = "wrap"
 containerY.style.flexDirection = "column"
 
+function randomColor(){
+    let color = Math.floor(Math.random() * 225);
+    return color;
+}
+
+console.log(randomColor())
+
 boxGenerate.addEventListener("click",()=>{  
     boxNum = prompt("what grid would you like?");
     if (containerY != null){
@@ -43,7 +50,8 @@ boxGenerate.addEventListener("click",()=>{
 
     boxColor.forEach((box)=>{
         box.addEventListener("mouseover", ()=>{
-            box.style.backgroundColor = "red"
+            box.style.backgroundColor = `rgb(${randomColor()},${randomColor()},${randomColor()})`
+            console.log(`rgb(${randomColor()},${randomColor()},${randomColor()})`)
         });
 });
 })
