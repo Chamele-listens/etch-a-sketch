@@ -46,12 +46,10 @@ boxGenerate.addEventListener("click",()=>{
     }
     body.appendChild(containerY);
     let boxColor = document.querySelectorAll(".box-color")
-    console.log(boxColor);
 
     boxColor.forEach((box)=>{
         box.addEventListener("mouseover", ()=>{
             box.style.backgroundColor = `rgb(${randomColor()},${randomColor()},${randomColor()})`
-            console.log(`rgb(${randomColor()},${randomColor()},${randomColor()})`)
         });
 });
 })
