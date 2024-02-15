@@ -25,8 +25,8 @@ boxGenerate.addEventListener("click",()=>{
         
             box.style.backgroundColor = "blue"
             box.style.border = "solid 1px black"
-            box.style.height = "50px"
-            box.style.width = "50px"
+            box.style.height = "10px"
+            box.style.width = "10px"
         
             containerX.appendChild(box)
         }
