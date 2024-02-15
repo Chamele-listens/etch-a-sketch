@@ -15,6 +15,11 @@ boxGenerate.addEventListener("click",()=>{
                 box.parentNode.removeChild(box)
             });
         }
+
+    if (boxNum > 100){
+        return alert("You can't enter anything over 100 !")
+    }
+
     for (let i = 1; i <= boxNum; i++){
         const containerX = document.createElement("div")
         containerX.style.display = "flex"
